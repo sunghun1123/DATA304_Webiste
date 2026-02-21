@@ -9,3 +9,27 @@ embed-resources: true
 ## Exercise 2
 
 ![US Population vs House of Representatives](https://preview.redd.it/the-us-is-growing-but-the-house-of-representatives-is-not-v0-8u2csvmhigkg1.png?width=1080&crop=smart&auto=webp&s=2c770cdaba82d81e7640ca23c8200773d12900e1)
+
+**What marks are being used? What variables are mapped to which properties?**
+
+line mark is used for this visualization. Congressional Year is mapped to the x axis and US Population divided by Number of House Seats (in millions) is mapped to the y axis. point marks are used to highlight between each year intervals, and dotted line shows the prediction for the future.
+
+**What is the main story of this graphic?**
+
+The number of people for each Representative has grown drastically. The representatives have more jobs and people to take care of. This also could mean that each citizen's voice and opinions are weakened from growing population.
+
+**What makes it a good graphic?**
+
+-Each point mark highlights a specific year and displays the exact population per representative at that time.
+-An annotation describing that Representatives capping at 425 helps us understand why the population increases drastically.
+-The dotted line also helps us forsee the projected data from historical data.
+
+**What features do you think you would know how to implement in Vega-Lite?**
+
+There are two features I would like to implement which are:
+-dotted line mark to project future data
+-Arrow + Annotation to help understanding
+
+**Are there any features of the graphic that you would not know how to do in Vega-Lite? If so, list them.**
+
+None
