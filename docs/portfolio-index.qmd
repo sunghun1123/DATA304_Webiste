@@ -3,3 +3,7 @@ title: "My Lab Website"
 ---
 
 I’m all set.
+
+## Assignments
+
+[HW 5](hw5/)

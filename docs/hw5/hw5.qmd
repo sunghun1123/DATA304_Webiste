@@ -1,3 +1,11 @@
+---
+title: "HW 5"
+format:
+  html:
+    output-file: "index"
+embed-resources: true
+---
+
 ## Exercise 2
 
 ![US Population vs House of Representatives](https://preview.redd.it/the-us-is-growing-but-the-house-of-representatives-is-not-v0-8u2csvmhigkg1.png?width=1080&crop=smart&auto=webp&s=2c770cdaba82d81e7640ca23c8200773d12900e1)
