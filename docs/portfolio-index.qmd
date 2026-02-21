@@ -1,7 +1,10 @@
 ---
 title: "My Lab Website"
+format:
+  html:
+    output-file: "index"
+embed-resources: true
 ---
-
 I’m all set.
 
 ## Assignments
