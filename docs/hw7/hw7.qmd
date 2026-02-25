@@ -1,0 +1,43 @@
+[Home](../)
+
+---
+title: "HW 7"
+format:
+  html:
+    output-file: "index"
+embed-resources: true
+---
+
+**Exercise 1**
+
+a) Guidlines for creating Bar charts
+- Bars must start at zero baseline
+- For long labels, use horizontal bars instead of rotating labels
+- Order bars by ascending or descending value when categories have no natural ordering
+
+b) It is not advised to use a Bar chart when the data values are all large and similar. This is because it is hard to see the differences.
+
+c) For large and similar datasets, for alternatives we can use heatmaps or dot plot.
+
+d) Wilke advises to use stacked bars when sum of the values or meaningful (counts, total). When comparing seperate values dodged bars or separate bars are more appropriate. 
+
+```{r}
+library(vegawidget)
+
+movies <- list(
+  `$schema` = "https://vega.github.io/schema/vega-lite/v6.json",
+  width = 500,
+  data = list(url = "https://calvin-data304.netlify.app/data/cow-movies.csv"),
+  mark = "bar",
+  encoding = list(
+    x = list(field = "amount", type = "quantitative", 
+             title = "weekend gross (million USD)",
+             axis = list(format = "~s")),
+    y = list(field = "title_short", type = "nominal",
+             sort = list(field = "amount", order = "descending"),
+             title = NULL)
+  )
+)
+
+as_vegaspec(movies)
+```
